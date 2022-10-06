@@ -11,7 +11,7 @@ const Nav = () => {
                     <input type="checkbox" id="checkbox_toggle" />
                      <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
                       {data && data.map((data,index)=>(
-                        <div key={index} className="menu">
+                        <div key={index} className="menu ">
                             <li >
                             <a href={data.path}>{data.name}</a>
                         </li>
@@ -36,13 +36,25 @@ const Contents = styled.div`
     justify-content: space-between;
     align-items: center;
     .menu {
+        width: 100%;
  display: flex;
  gap: 1em;
+ display: flex;
+
  font-size: 14px;
 }
-.menu li:hover {
- background-color: #4c9e9e;
- border-radius: 5px;
+.menu li{
+    width: 70%;
+}
+.menu li:hover::after {
+position: absolute;
+content: '';
+margin-top: 10px;
+width: 10px;
+height: 10px;
+bottom:0;
+background-color: blue;
+border-radius: 10px;
  transition: 0.3s ease;
 }
 .menu li {
@@ -60,6 +72,13 @@ user-select: none;
 }
 
 @media screen and (max-width: 768px) {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 768px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .menu{
         display: none;
         background-color:teal;
