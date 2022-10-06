@@ -7,7 +7,7 @@ const Nav = () => {
         <Contents>
             <h1 className='text-blue-800 font-bold'>Me<span className='text-blue-400'>dic</span></h1>
             <div className='flex justfiy-evenly gap-3 '>
-                    <ul>
+                    <ul className='flex justfiy-evenly gap-5 cursor-pointer'>
                       {data && data.map((data,index)=>(
                         <li key={index}>
                             <a href={data.path}>{data.name}</a>
