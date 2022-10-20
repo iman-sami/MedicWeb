@@ -7,7 +7,7 @@ const Nav = () => {
         <Contents>
             <h1 className='text-blue-800 font-bold'>Me<span className='text-blue-400'>dic</span></h1>
             <div className='flex justfiy-evenly gap-3 '>
-                    <ul className='flex'>
+                    <ul className='flex justify-center items-center'>
                     <input type="checkbox" id="checkbox_toggle" />
                      <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
                       {data && data.map((data,index)=>(
@@ -20,13 +20,15 @@ const Nav = () => {
                       ))}
                     </ul>
             </div>
+            <button className='px-2 py-1 bg-blue-500 text-white rounded-2xl'>Contact us</button>
         </Contents>
     </Container>
   )
 }
 const Container = styled.div`
     width: 100%;
-    height: 100%;
+    height: 70px;
+
 `
 const Contents = styled.div`
     margin: 0 auto;
@@ -45,6 +47,7 @@ const Contents = styled.div`
 }
 .menu li{
     width: 70%;
+    position: relative;
 }
 .menu li:hover::after {
 position: absolute;
