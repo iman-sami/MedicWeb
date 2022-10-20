@@ -4,6 +4,8 @@ import Aboutus from '../components/AboutUs/Aboutus'
 import Hero from '../components/Hero/Hero'
 import Nav from '../components/Nav/Nav'
 import Service from '../components/Service/Service'
+import Teams from '../components/Teams/Teams'
+import Testimonial from '../components/Testimonials/Testimonial'
 const Landing = () => {
   return (
     <Container>
@@ -11,6 +13,8 @@ const Landing = () => {
         <Hero/>
         <Service/>
         <Aboutus/>
+        <Teams/>
+        <Testimonial/>
     </Container>
   )
 }
