@@ -18,9 +18,11 @@ const Nav = () => {
                         </div>
                        
                       ))}
+
                     </ul>
+                    <button className='px-2 py-1 bg-blue-500 text-white rounded-2xl'>Contact us</button>
+
             </div>
-            <button className='px-2 py-1 bg-blue-500 text-white rounded-2xl'>Contact us</button>
         </Contents>
     </Container>
   )

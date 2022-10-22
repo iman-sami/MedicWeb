@@ -30,6 +30,7 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     gap:3rem;
+    scroll-behavior: smooth;
   
 `
 export default Landing

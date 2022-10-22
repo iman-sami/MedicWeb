@@ -5,7 +5,7 @@ const Hero = () => {
   return (
 <Container>
   <Contents>
-    <div className='  flex w-[50%] flex-col  gap-3 items-start'>
+    <div className='  flex w-[50%] flex-col left-items gap-3 items-start'>
       <h1 className='flex justify-evenly gap-5  text-[18px]  font-bold pt-10 items-center'><hr className='bg-blue-600 rounded-xl h-[3rem] w-[.2rem] '/>A range of programs for healthcare</h1>
       <h1 className='text-[44px] font-bold ml-3'>Special Touch</h1>
       <p className='text-start'>
@@ -32,5 +32,19 @@ margin: 0 auto;
 display: flex;
 justify-content: space-evenly;
 gap:3rem;
+@media screen and (max-width:768px){
+  max-width:768px;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  gap:3rem;
+  align-items: center;
+  .left-items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+  }
+}
 `
 export default Hero

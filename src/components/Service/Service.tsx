@@ -5,7 +5,7 @@ import heart from '../../assets/images/heart.svg'
 import {GrFormNextLink} from 'react-icons/gr'
 const Service = () => {
   return (
-   <Container>
+   <Container id='services'>
     <Contents>
       <h1 className='text-[44px] font-bold'>Our Services</h1>
       <p className='text-center font-bold text-[14px]'>We offer Complete healthcare to indivisual with various <br/> health concerns</p>
