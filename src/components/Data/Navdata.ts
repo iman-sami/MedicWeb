@@ -5,7 +5,7 @@ export const data = [
     },
    {
        name:"Service",
-       path: "/services"
+       path: "#services"
     },
     {
         name:"AboutUs",
