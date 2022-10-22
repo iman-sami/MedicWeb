@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import img2 from '../../assets/images/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.webp'
 const Hero = () => {
   return (
 <Container>
@@ -13,8 +14,8 @@ const Hero = () => {
         </p>
         <button className='mt-10 text-white hover:font-bold bg-blue-500 px-4 py-3 rounded-sm transition-all 5s ease-in-out hover:scale-110'>Make An Appointment.</button>
     </div>
-    <div className='w-[50%]'>
-
+    <div className='w-[50%] relative flex justify-center'>
+    <img src={img2} className='absolute object-cover h-[60vh]' alt='nnn'/> 
     </div>
   </Contents>
 </Container>
